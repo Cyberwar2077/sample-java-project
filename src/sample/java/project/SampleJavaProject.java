@@ -40,11 +40,13 @@ public class SampleJavaProject implements Runnable {
      */
     public static void main(final String[] args) {
         /* Parse command line arguments. */
+    	System.out.println("what");
         SampleJavaProject sjp = new SampleJavaProject();
         try {
             JCommander jc = new JCommander(sjp, args);
             if (sjp.help) {
                 jc.usage();
+                System.out.println("what");
                 return;
             }
         } catch (ParameterException e) {
